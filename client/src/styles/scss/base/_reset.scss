@@ -8,6 +8,15 @@
   *::-webkit-scrollbar{display: none;}
 }
 
+html{
+  @include respond(xxxl) {font-size: $xxxl-scale;}
+  @include respond(xxl) {font-size: $xxl-scale;}
+  @include respond(xl) {font-size: $xl-scale;}
+  @include respond(l) { font-size: $l-scale;}
+  @include respond(md) { font-size: $md-scale;}
+  @include respond(sm) {font-size: $sm-scale;}
+}
+
 body {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -19,3 +28,12 @@ a {
   text-decoration: none;
   color: inherit; 
 } 
+
+li{list-style: none;}
+
+.wrapper{
+  position: relative;
+  display: inline-block;
+  overflow-y: hidden;
+
+}

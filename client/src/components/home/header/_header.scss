@@ -1,0 +1,33 @@
+.header{
+  height: 100vh;
+  
+  &__content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: inline-flex;
+    flex-direction: column;
+    align-self:center;
+
+    @include respond(sm) {
+      display: flex;
+      justify-content: center;
+      transform: translateY(-50%);
+    } 
+  }
+
+  &__heading{
+    @include respond(sm) { text-align: center;} 
+
+    &--offset{
+      margin-left: 20%;
+      @include respond(sm) {margin-left: 0;} 
+    }
+  }
+
+  &__line{
+    @include respond(sm) { display: none;} 
+  }
+}
+

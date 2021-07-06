@@ -12,6 +12,42 @@
   display: none;
 }
 
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 body {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -26,6 +62,16 @@ a {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  overflow-y: hidden;
+}
+
 @font-face {
   font-family: 'euclid_flexbold';
   src: url("../../assets/fonts/euclidflex-bold-webfont.woff") format("woff"), url("../../assets/fonts/euclidflex-bold-webfont.woff2") format("woff2");
@@ -38,6 +84,23 @@ a {
   src: url("../../assets/fonts/EuclidFlex-Regular_webfont.woff2") format("woff2"), url("../../assets/fonts/euclidflex-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+.tertiary-heading {
+  font-family: 'euclid_flexregular';
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.tertiary-heading--bold {
+  font-family: 'euclid_flexbold';
+}
+
+@media only screen and (max-width: 768px) {
+  .tertiary-heading {
+    font-size: 2rem;
+  }
 }
 
 .openTypeStyle1 {
@@ -74,10 +137,6 @@ a {
 
 .container {
   margin: 0 auto;
-}
-
-.container--full-width {
-  width: 100vw;
 }
 
 .row {
@@ -908,7 +967,7 @@ a {
 }
 
 .line-large {
-  height: 2rem;
+  height: .5rem;
   position: relative;
   z-index: 3;
   max-width: 100%;
@@ -916,5 +975,54 @@ a {
   border: none;
   box-sizing: border-box;
   transform-origin: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .line-large {
+    height: .3rem;
+  }
+}
+
+.header {
+  height: 100vh;
+}
+
+.header__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__content {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__heading {
+    text-align: center;
+  }
+}
+
+.header__heading--offset {
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__heading--offset {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__line {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

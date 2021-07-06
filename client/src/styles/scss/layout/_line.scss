@@ -19,6 +19,8 @@
 }
 
 .line-large{
-  height: 2rem;
+  height: .5rem;
+  @include respond(sm) {height: .3rem;} 
   @include line;
+  
 }
