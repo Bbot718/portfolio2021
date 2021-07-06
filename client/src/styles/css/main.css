@@ -91,7 +91,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-1 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -101,7 +101,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-2 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -111,7 +111,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-2 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -121,7 +121,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-3 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -131,7 +131,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-3 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -141,7 +141,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-3 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -151,7 +151,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-4 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -161,7 +161,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-4 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -171,7 +171,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-4 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -181,7 +181,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-4 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -191,7 +191,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-5 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -201,7 +201,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-5 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -211,7 +211,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-5 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -221,7 +221,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-5 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -231,7 +231,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-5 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -241,7 +241,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -251,7 +251,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -261,7 +261,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -271,7 +271,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -281,7 +281,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -291,7 +291,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-6 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -301,7 +301,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -311,7 +311,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -321,7 +321,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -331,7 +331,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -341,7 +341,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -351,7 +351,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -361,7 +361,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-7 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -371,7 +371,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -381,7 +381,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -391,7 +391,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -401,7 +401,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -411,7 +411,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -421,7 +421,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -431,7 +431,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -441,7 +441,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-8-of-8 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 8);
   }
 }
 
@@ -451,7 +451,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -461,7 +461,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -471,7 +471,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -481,7 +481,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -491,7 +491,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -501,7 +501,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -511,7 +511,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -521,7 +521,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-8-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 8);
   }
 }
 
@@ -531,7 +531,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-9-of-9 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 9);
   }
 }
 
@@ -541,7 +541,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -551,7 +551,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -561,7 +561,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -571,7 +571,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -581,7 +581,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -591,7 +591,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -601,7 +601,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -611,7 +611,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-8-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 8);
   }
 }
 
@@ -621,7 +621,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-9-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 9);
   }
 }
 
@@ -631,7 +631,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-10-of-10 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 10);
   }
 }
 
@@ -641,7 +641,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -651,7 +651,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -661,7 +661,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -671,7 +671,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -681,7 +681,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -691,7 +691,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -701,7 +701,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -711,7 +711,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-8-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 8);
   }
 }
 
@@ -721,7 +721,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-9-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 9);
   }
 }
 
@@ -731,7 +731,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-10-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 10);
   }
 }
 
@@ -741,7 +741,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-11-of-11 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 11);
   }
 }
 
@@ -751,7 +751,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-1-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 1);
   }
 }
 
@@ -761,7 +761,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-2-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 2);
   }
 }
 
@@ -771,7 +771,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-3-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 3);
   }
 }
 
@@ -781,7 +781,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-4-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 4);
   }
 }
 
@@ -791,7 +791,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-5-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 5);
   }
 }
 
@@ -801,7 +801,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-6-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 6);
   }
 }
 
@@ -811,7 +811,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-7-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 7);
   }
 }
 
@@ -821,7 +821,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-8-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 8);
   }
 }
 
@@ -831,7 +831,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-9-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 9);
   }
 }
 
@@ -841,7 +841,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-10-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 10);
   }
 }
 
@@ -851,7 +851,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-11-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 11);
   }
 }
 
@@ -861,7 +861,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-12-of-12 {
-    flex: 0 0 100% !important;
+    flex: 0 0 calc(100% / 2 * 12);
   }
 }
 
