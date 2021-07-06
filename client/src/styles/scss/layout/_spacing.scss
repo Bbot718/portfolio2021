@@ -1,0 +1,19 @@
+.spacing-small{
+  height: calc(#{$gutter-vertical} / 2);
+  display: block;
+}
+
+.spacing-regular{
+  height: $gutter-vertical;
+  display: block;
+}
+
+.spacing-large{
+  height: calc(#{$gutter-vertical} * 2);
+  display: block;
+}
+
+.spacing-xl{
+  height: calc(#{$gutter-vertical} * 4 );
+  display: block;
+}
