@@ -14,7 +14,7 @@ const Header = (props) => {
     const chars = splitText.chars;
 
     //gsap.from(words, {y: '100%', stagger: 0.05, ease: Expo.easeInOut, duration:1.5});
-    gsap.from(chars, {rotateX: '200%', stagger: 0.05, ease: Expo.easeInOut, duration:1.5});
+    //gsap.from(chars, {rotateX: '200%', stagger: 0.05, ease: Expo.easeInOut, duration:1.5});
 
   }, []);
 

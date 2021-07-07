@@ -29,11 +29,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //Get Menu
 app.get('/api/projects', (req, res) => {
-   const sqlSelect = "SELECT * from projects";
+   const sqlSelect = "SELECT * from projects ORDER BY date DESC";
    db.query(sqlSelect, (err, result) => {
       res.send(result);
    })
 })
+
+app.get('/api/tags', (req, res) => {
+  const sqlSelect = "SELECT * from projects_tags INNER JOIN tags WHERE projects_tags.tags_id = tags.tags_id";
+  db.query(sqlSelect, (err, result) => {
+     res.send(result);
+  })
+})
+
 
 app.listen(3001, () => {
    console.log('running on port 3001');

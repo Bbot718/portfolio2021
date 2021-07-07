@@ -14,15 +14,50 @@
   font-style: normal;
 }
 
-.tertiary-heading{
-  font-family: 'euclid_flexregular';
+.primary-heading{
+  font-family: 'euclid_flexbold';
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 14.552rem;
   line-height: 1;
 
   &--bold{font-family: 'euclid_flexbold';}
 
-  @include respond(sm) {font-size: 2rem;} 
+  @include respond(sm) {font-size: 5.96rem} 
+}
+
+.secondary-heading{
+  font-family: 'euclid_flexregular';
+  text-transform: uppercase;
+  font-size: 7.451rem;
+  line-height: 1;
+
+  &--bold{font-family: 'euclid_flexbold';}
+
+  @include respond(sm) {font-size: 1.953rem} 
+}
+
+.tertiary-heading{
+  font-family: 'euclid_flexregular';
+  text-transform: uppercase;
+  font-size: 5.96rem;
+  line-height: 1;
+
+  &--bold{font-family: 'euclid_flexbold';}
+
+  @include respond(sm) {font-size: 2.441rem} 
+}
+
+.regular-text{
+  font-family: 'euclid_flexregular';
+  font-size: 1.563rem;
+  
+
+  &--bold{font-family: 'euclid_flexbold';}
+
+  @include respond(sm) {
+    font-size: .8rem;
+    line-height: 1.2;
+  } 
 }
 
 @for $i from 1 through 7{
