@@ -1,3 +1,4 @@
+import curDot from 'cursor-dot'
 import './styles/css/main.css';
 
 import Home from './components/home/home';
