@@ -22,18 +22,18 @@
 
   &--bold{font-family: 'euclid_flexbold';}
 
-  @include respond(sm) {font-size: 5.96rem} 
+  @include respond(sm) {font-size: 3.815rem} 
 }
 
 .secondary-heading{
   font-family: 'euclid_flexregular';
   text-transform: uppercase;
-  font-size: 7.451rem;
+  font-size: 5.96rem;
   line-height: 1;
 
   &--bold{font-family: 'euclid_flexbold';}
 
-  @include respond(sm) {font-size: 1.953rem} 
+  @include respond(sm) {font-size: 1.563rem} 
 }
 
 .tertiary-heading{
@@ -42,16 +42,49 @@
   font-size: 5.96rem;
   line-height: 1;
 
-  &--bold{font-family: 'euclid_flexbold';}
+  &--lowercase{text-transform: none;}
+  &--bold{
+    font-family: 'euclid_flexbold';
+    @include respond(sm) {
+      font-family: 'euclid_flexregular';
+    } 
+  }
 
-  @include respond(sm) {font-size: 2.441rem} 
+  @include respond(sm) {
+    font-size: 1.563rem;
+    text-transform:initial;
+    line-height:1.1;
+  } 
+}
+
+
+.quartary-heading{
+  font-family: 'euclid_flexregular';
+  text-transform: uppercase;
+  font-size: 2.441rem;
+  line-height: 1;
+
+  & a{
+    text-decoration: underline;
+  }
+
+  @include respond(sm) {font-size: 1.25rem} 
 }
 
 .regular-text{
   font-family: 'euclid_flexregular';
-  font-size: 1.563rem;
-  
+  font-size: 1.25rem;
+  &--bold{font-family: 'euclid_flexbold';}
 
+  @include respond(sm) {
+    font-size: .8rem;
+    line-height: 1.2;
+  } 
+}
+
+.small-text{
+  font-family: 'euclid_flexregular';
+  font-size: 1rem;
   &--bold{font-family: 'euclid_flexbold';}
 
   @include respond(sm) {

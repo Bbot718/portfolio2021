@@ -1,6 +1,5 @@
 .work-item{
   margin:  calc(#{$gutter-vertical} / 2) 0;
-  @include respond(sm) {margin:  calc(#{$gutter-vertical} / 4) 0;} 
 
   &__image{
     position: relative;
@@ -12,7 +11,7 @@
     &--media{
       width: inherit;
       display: block;
-      @include respond(sm) {filter: brightness(1.2);} 
+      @include respond(sm) {margin:  calc(#{$gutter-vertical} / 4) 0;} 
       
     }
 
@@ -31,6 +30,15 @@
     float: right;
     text-align: right;
     white-space: nowrap;
+
+    @include respond(sm) {
+      display: flex;
+      text-align: left;
+      float: left;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    } 
   }
 
   &__tags{
@@ -39,7 +47,15 @@
 
     position: absolute;
     right: 0;
-    
+
+    @include respond(sm) {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+     
+    } 
   }
 
   &__tag{
@@ -54,6 +70,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @include respond(sm) {position: static;} 
   }
 
 }

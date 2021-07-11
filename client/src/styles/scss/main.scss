@@ -8,6 +8,12 @@
 @import 'layout/spacing';
 @import 'layout/line';
 
+
+//Navigation
+@import '../../components/navigation/navigation';
+@import '../../components/footer/footer';
+
 //Home Page
 @import '../../components/home/header/header';
 @import '../../components/home/work/work';
+@import '../../components/home/contact/contacts';

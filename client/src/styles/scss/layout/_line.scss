@@ -6,6 +6,8 @@
   border: none;
   box-sizing: border-box;
   transform-origin: left;
+
+  @include respond(sm) { max-width: calc( 100% - #{$gutter-vertical} * 2)}
 }
 
 .line-hair{
@@ -14,7 +16,7 @@
 }
 
 .line-regular{
-  height: .75rem;
+  height: .7rem;
   @include respond(sm) {height: .2rem;} 
   @include line;
 }
@@ -26,7 +28,7 @@
 }
 
 .line-xl{
-  height: 1.8rem;
-  @include respond(sm) {height: .8rem;} 
+  height: 1.6rem;
+  @include respond(sm) {height: .5rem;} 
   @include line;
 }

@@ -1,7 +1,13 @@
 .header{
+  margin-top: -.5rem;
   height: 100vh;
+  @include respond(sm) {
+    height: auto;
+    margin-top: 1rem;
+  }
   
   &__content{
+   
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -14,11 +20,13 @@
       display: flex;
       justify-content: center;
       transform: translateY(-50%);
+      margin-bottom: calc(#{$gutter-vertical} * 6) 0;
     } 
+
+    @include respond(sm) { transform: translateY(0);}
   }
 
-  &__heading{
-    @include respond(sm) { text-align: center;} 
+  &__heading{ 
 
     &--offset{
       margin-left: 20%;

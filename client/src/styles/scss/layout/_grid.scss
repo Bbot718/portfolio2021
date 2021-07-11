@@ -5,6 +5,11 @@
 .row{
   display: flex;
   flex-wrap: wrap;
+  max-width: 110rem;
+  
+  @include respond(sm) {
+    max-width: calc(100%);
+  }
 }
 
 
@@ -15,22 +20,19 @@
         margin: $gutter-horizontal $gutter-vertical;
 
         @include respond(sm) {
-        flex: 0 0 calc(100% - #{$gutter-vertical} * 2) !important;}
+        flex: 0 0 100%}
 
         &--no-margin{
            position: relative;
            flex: 0 0 calc(100% / #{$i} * #{$j});
            margin: 0 !important;
+
+           
+        @include respond(sm) {
+          flex: 0 0 calc(100% - #{$gutter-vertical} * 2);
+          }
         }
   }
 }
 
-@for $i from 1 through 12{
-  @for $j from 1 through $i{
-     .col-#{$j}-of-#{$i}-not-responsive{ 
-        flex: 0 0 calc(100% / #{$i} * #{$j}   - #{$gutter-vertical} * 2);
-        margin: $gutter-horizontal $gutter-vertical;
-     }
-  }
-}
 }
