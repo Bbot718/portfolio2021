@@ -11,9 +11,11 @@
 .spacing-large{
   height: calc(#{$gutter-vertical} * 2);
   display: block;
+  @include respond(sm) { height: calc(#{$gutter-vertical * 2})}
 }
 
 .spacing-xl{
   height: calc(#{$gutter-vertical} * 4 );
   display: block;
+  @include respond(sm) { height: calc(#{$gutter-vertical} * 2 )}
 }
