@@ -15,7 +15,8 @@
         "../../components/home/header/_header.scss",
         "../../components/home/work/_work.scss",
         "../../components/home/about/_about.scss",
-        "../../components/home/contact/_contacts.scss"
+        "../../components/home/contact/_contacts.scss",
+        "../../components/about/_about.scss"
     ],
     "names": [],
     "file": "main.css"
