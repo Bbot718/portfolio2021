@@ -42,6 +42,20 @@ app.get('/api/tags', (req, res) => {
   })
 })
 
+app.get('/api/exhibitions', (req, res) => {
+  const sqlSelect = "SELECT * from exhibitions ORDER BY end_date DESC";
+  db.query(sqlSelect, (err, result) => {
+     res.send(result);
+  })
+})
+
+app.get('/api/locations', (req, res) => {
+  const sqlSelect = "SELECT * from exhibition_location INNER JOIN location WHERE exhibition_location.location_id = location.location_id";
+  db.query(sqlSelect, (err, result) => {
+     res.send(result);
+  })
+})
+
 
 app.listen(3001, () => {
    console.log('running on port 3001');

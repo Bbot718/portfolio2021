@@ -1,9 +1,14 @@
 
+
+import Exhibition from './exhibiton/exhibition';
+import Contact from '../home/contact/contact';
+
 const About = (props) => {
 
   return(
     <div className="about">
-        about
+      <Exhibition />
+      <Contact />
     </div>
   )
 }

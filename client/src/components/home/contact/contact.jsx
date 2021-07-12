@@ -4,6 +4,7 @@ import ReactRotatingText from "react-rotating-text";
 import Footer from '../../footer/footer';
 
 const Contact = (props) => {
+  
 
   return(
     <div className="contact">
