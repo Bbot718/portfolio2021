@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -62,10 +63,6 @@ a {
   color: inherit;
 }
 
-li {
-  list-style: none;
-}
-
 .wrapper {
   position: relative;
   display: inline-block;
@@ -122,7 +119,7 @@ li {
 .secondary-heading {
   font-family: 'euclid_flexregular';
   text-transform: uppercase;
-  font-size: 5.96rem;
+  font-size: 4.768rem;
   line-height: 1;
 }
 
@@ -167,13 +164,18 @@ li {
 
 .quartary-heading {
   font-family: 'euclid_flexregular';
-  text-transform: uppercase;
-  font-size: 2.441rem;
+  font-size: 1.953rem;
   line-height: 1;
+  display: inline;
 }
 
-.quartary-heading a {
+.quartary-heading a:hover {
   text-decoration: underline;
+}
+
+.quartary-heading a::before {
+  content: "↳ ";
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -244,10 +246,6 @@ li {
 
 .openTypeStyle11 {
   font-feature-settings: 'ss11';
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .row {
@@ -2106,7 +2104,7 @@ li {
 }
 
 .line-regular {
-  height: .7rem;
+  height: .5rem;
   position: relative;
   z-index: 3;
   max-width: 100%;
@@ -2216,7 +2214,7 @@ li {
   flex-direction: row-reverse;
   justify-content: space-between;
   background-color: white;
-  height: 4rem;
+  height: 3rem;
   align-items: center;
 }
 
@@ -2256,6 +2254,7 @@ li {
   margin-left: 1rem;
   height: .8rem;
   overflow-y: hidden;
+  display: block !important;
 }
 
 .navigation-button__text {
@@ -2322,16 +2321,17 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 7.5vh;
 }
 
 @media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column-reverse;
+    margin-bottom: 5vh;
   }
 }
 
 .header {
-  margin-top: -.5rem;
   height: 100vh;
 }
 
@@ -2474,16 +2474,32 @@ li {
 }
 
 .contact {
-  margin-bottom: 7.5vh;
+  margin-bottom: 2.5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .contact {
-    margin-bottom: 2.5rem;
-  }
+.contact__wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
 }
 
 .red {
   color: red;
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

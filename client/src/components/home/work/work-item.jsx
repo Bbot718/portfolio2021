@@ -24,12 +24,12 @@ const WorkItem = (props) => {
               <div className="work-item__info">
                 <div className="work-item__tags">
                   {props.tags.map((tag, i) => {
-                    return(<div className="wrapper"><div className="work-item__tag regular-text">{tag.name}</div></div>)
+                    return(<div className="wrapper"><div className="work-item__tag small-text">{tag.name}</div></div>)
                   })}
                 </div>
                 
                 <div className="work-item__title">
-                  <div className="wrapper"><div className="regular-text">{props.data.date}</div></div>
+                  <div className="wrapper"><div className="small-text">{props.data.date}</div></div>
                   <div className="wrapper"><h2 className="secondary-heading">{props.data.name}</h2></div>
                 </div>
 

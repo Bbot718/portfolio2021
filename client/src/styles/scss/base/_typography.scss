@@ -28,7 +28,7 @@
 .secondary-heading{
   font-family: 'euclid_flexregular';
   text-transform: uppercase;
-  font-size: 5.96rem;
+  font-size: 4.768rem;
   line-height: 1;
 
   &--bold{font-family: 'euclid_flexbold';}
@@ -60,15 +60,19 @@
 
 .quartary-heading{
   font-family: 'euclid_flexregular';
-  text-transform: uppercase;
-  font-size: 2.441rem;
+  font-size:1.953rem;
   line-height: 1;
+  display: inline;
 
   & a{
-    text-decoration: underline;
+    &:hover{text-decoration: underline;}
+    &::before{
+      content: "↳ ";
+      text-decoration: none;
+    }
   }
 
-  @include respond(sm) {font-size: 1.25rem} 
+  @include respond(sm) {font-size: 1.25rem;} 
 }
 
 .regular-text{

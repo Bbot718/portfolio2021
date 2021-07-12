@@ -1,5 +1,5 @@
 .container{
-  margin: 0 auto;
+
 }
 
 .row{
@@ -30,9 +30,8 @@
            
         @include respond(sm) {
           flex: 0 0 calc(100% - #{$gutter-vertical} * 2);
-          }
         }
+      }
+    }
   }
-}
-
 }

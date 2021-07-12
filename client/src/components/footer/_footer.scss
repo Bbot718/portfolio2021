@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 7.5vh;
 
   @include respond(sm) {
     flex-direction: column-reverse;
+    margin-bottom: 5vh;
     
   } 
 }

@@ -16,7 +16,7 @@
 }
 
 .line-regular{
-  height: .7rem;
+  height: .5rem;
   @include respond(sm) {height: .2rem;} 
   @include line;
 }
