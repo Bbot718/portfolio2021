@@ -58,6 +58,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -164,7 +168,7 @@ a {
 
 .quartary-heading {
   font-family: 'euclid_flexregular';
-  font-size: 1.953rem;
+  font-size: 1.563rem;
   line-height: 1;
   display: inline;
 }
@@ -203,6 +207,7 @@ a {
 .small-text {
   font-family: 'euclid_flexregular';
   font-size: 1rem;
+  display: inline;
 }
 
 .small-text--bold {
@@ -2065,7 +2070,7 @@ a {
 }
 
 .spacing-large {
-  height: calc(1.25rem * 2);
+  height: calc(1.25rem * 4);
   display: block;
 }
 
@@ -2076,7 +2081,7 @@ a {
 }
 
 .spacing-xl {
-  height: calc(1.25rem * 4);
+  height: calc(1.25rem * 8);
   display: block;
 }
 
@@ -2483,6 +2488,10 @@ a {
   background-color: red;
 }
 
+.contact__link {
+  display: block;
+}
+
 .red {
   color: red;
 }
@@ -2504,7 +2513,60 @@ a {
 }
 
 .about {
-  margin: 7.5vh 0;
+  margin-top: 7.5vh 0;
+}
+
+.journey__text {
+  text-align: justify;
+  max-width: 100%;
+  font-size: 1.563rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .journey__text {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills {
+    font-size: 10rem !important;
+  }
+}
+
+.skills__row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills__row {
+    flex-direction: column;
+  }
+}
+
+.skills__list {
+  margin-right: 3rem;
+}
+
+.skills__item {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills__item {
+    font-size: 1.25rem !important;
+  }
+}
+
+.skills__subitem:before {
+  content: "› ";
+}
+
+@media only screen and (max-width: 768px) {
+  .skills__subitem {
+    font-size: 1.25rem !important;
+  }
 }
 
 .exhibition__row {
@@ -2523,7 +2585,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  text-align: right;
 }
 
 @media only screen and (max-width: 768px) {

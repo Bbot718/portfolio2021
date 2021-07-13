@@ -60,7 +60,7 @@
 
 .quartary-heading{
   font-family: 'euclid_flexregular';
-  font-size:1.953rem;
+  font-size:1.563rem;
   line-height: 1;
   display: inline;
 
@@ -89,6 +89,7 @@
 .small-text{
   font-family: 'euclid_flexregular';
   font-size: 1rem;
+  display: inline;
   &--bold{font-family: 'euclid_flexbold';}
 
   @include respond(sm) {

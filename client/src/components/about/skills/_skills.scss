@@ -1,0 +1,27 @@
+.skills{
+  @include respond(sm) {font-size: 10rem !important} 
+  &__row{
+    display: flex;
+    flex-direction: row;
+    
+
+    @include respond(sm) {flex-direction: column ;} 
+  }
+  
+  &__list{
+    margin-right: 3rem;
+  }
+
+
+
+  &__item{
+    text-decoration: underline  ;
+    @include respond(sm) {font-size: 1.25rem !important} 
+  }
+
+  &__subitem{
+    &:before{content: "› ";}
+    @include respond(sm) {font-size: 1.25rem !important} 
+  }
+
+}

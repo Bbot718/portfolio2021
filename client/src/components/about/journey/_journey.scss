@@ -1,0 +1,9 @@
+.journey{
+  &__text{
+    text-align: justify;
+    max-width: 100%;
+    font-size: 1.563rem;
+
+    @include respond(sm) {font-size: 1.25rem;} 
+  }
+}

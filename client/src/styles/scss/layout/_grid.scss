@@ -1,11 +1,11 @@
-.container{
 
-}
 
 .row{
+
   display: flex;
   flex-wrap: wrap;
   max-width: 110rem;
+
   
   @include respond(sm) {
     max-width: calc(100%);

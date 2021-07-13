@@ -23,7 +23,7 @@ const Exhibition = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-1-of-1--no-margin">
-            <div className="exhibition__name regular-text">EXHIBITIONS</div>
+            <div className="exhibition__name small-text">Exhibitions</div>
           </div>
         </div>
         <hr className="line-hair" />
@@ -52,7 +52,6 @@ const Exhibition = (props) => {
           )
         })}
       </div>
-      <div className="spacing-xl"></div>
     </div>
   )
 }
