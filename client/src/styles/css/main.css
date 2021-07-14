@@ -58,6 +58,19 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.App {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    margin: 0 1.25rem;
+    width: 100%;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -2071,7 +2084,6 @@ a {
 
 .spacing-large {
   height: calc(1.25rem * 4);
-  display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2179,68 +2191,36 @@ a {
 
 .navigation {
   position: fixed;
-  width: inherit;
-  height: inherit;
+  width: 15rem;
+  height: 100vh;
+  z-index: 1000;
+  transform: translateX(calc(-1.25rem * 2 - 15rem));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 7.5vh 0;
   text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
   .navigation {
+    width: 100%;
+    transform: translate(-1.25rem, -1.25rem);
+    padding: 0;
     text-align: left;
-    justify-content: start;
-  }
-}
-
-.navigation__container {
-  height: 85vh;
-  margin-top: 7.5vh;
-  width: 200px;
-  float: right;
-}
-
-@media only screen and (max-width: 768px) {
-  .navigation__container {
-    z-index: 100;
-    position: absolute;
-    height: 100vh;
-    width: calc(100% - 1.25rem * 2);
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
 .navigation__header {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: white;
-  height: 3rem;
-  align-items: center;
+  padding: calc(1.25rem);
 }
 
-.navigation__title {
+.navigation__menu {
   display: flex;
   flex-direction: column;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu__item {
-  margin: calc(1.25rem / 8) 0;
 }
 
 .navigation-button {
@@ -2301,11 +2281,11 @@ a {
 }
 
 .navigation-button__hamburger span:nth-child(2) {
-  top: .25rem;
+  top: .2rem;
 }
 
 .navigation-button__hamburger span:nth-child(3) {
-  top: .5rem;
+  top: .4rem;
 }
 
 .navigation-button__hamburger.open span:nth-child(1) {
@@ -2478,6 +2458,10 @@ a {
   }
 }
 
+.about {
+  margin: 7.5vh 0;
+}
+
 .contact {
   margin-bottom: 2.5rem;
 }
@@ -2513,7 +2497,7 @@ a {
 }
 
 .about {
-  margin-top: 7.5vh 0;
+  margin-topw: 7.5vh 0;
 }
 
 .journey__text {

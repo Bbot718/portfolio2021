@@ -8,7 +8,7 @@ function Home() {
     <div className="home">
       <Header/>
       <Work/>  
-      <div className="spacing-xl"/>
+      <div className="spacing-large"/>
       <Contact />
     </div>
   );

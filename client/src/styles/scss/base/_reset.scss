@@ -24,6 +24,18 @@ body {
   &::-webkit-scrollbar {display: none;}
 }
 
+.App{
+  margin-left: auto;
+  margin-right: auto;
+  width: $page-width;
+
+  @include respond(sm) {
+    margin: 0 $gutter-vertical;
+    width: 100%;
+
+  }
+}
+
 li{
   list-style: none;
 }

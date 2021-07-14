@@ -1,64 +1,38 @@
 .navigation{
   position: fixed;
-  width: inherit;
-  height: inherit;
-
+  width: 15rem;
+  height: 100vh;
+  z-index: 1000;
+  transform: translateX(calc(#{-$gutter-vertical} * 2 - 15rem));
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  padding: 7.5vh 0;
   text-align: right;
 
   @include respond(sm) {
+    width: 100%;
+    transform: translate(-$gutter-vertical, -$gutter-vertical);
+    padding: 0;
     text-align: left;
-    justify-content: start;
-  } 
-
-  &__container{
-    height: 85vh;
-    margin-top: 7.5vh;
-
-    width: 200px;
-    float: right;
-
-    @include respond(sm) {
-      z-index: 100;
-      position: absolute;
-      height: 100vh;
-      width:  calc(100% - #{$gutter-vertical} * 2);
-      margin-top: 0;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    } 
   }
-  
+
   &__header{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
-
-    background-color: white;
-    height: 3rem;
-    align-items: center;
+    padding: calc(#{$gutter-vertical});
   }
 
-  &__title{
-    display: flex;
+  &__menu{
+    display: flex; 
     flex-direction: column;
   }
+  
 }
 
-.menu{
-  display: flex;
-  flex-direction: column;
-  @include respond(sm) { display: none;}
-
-  &__item{
-    margin: calc(#{$gutter-vertical} / 8) 0
-  }
-}
 
 
 
@@ -138,11 +112,11 @@
       }
       
       &:nth-child(2) {
-        top: .25rem;
+        top: .2rem;
       }
       
       &:nth-child(3) {
-        top: .5rem;
+        top: .4rem;
       }
     }
 
