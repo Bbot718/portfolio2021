@@ -22,8 +22,8 @@ const Navigation = (props) => {
       <div className="navigation__header">
 
         <div className="navigation__title">
-          <div className="wrapper"><div className="small-text">BENJAMIN BOTROS</div></div>
-          <div className="wrapper no-mobile"><div className="small-text">Digital Designer</div></div>
+          <div className="wrapper"><div className="navigation__title navigation__in regular-text">Benjamin Botros</div></div>
+          <div className="wrapper no-mobile"><div className="navigation__title navigation__in regular-text">Digital Designer</div></div>
         </div>
 
         <div className="navigation__button">
@@ -48,13 +48,16 @@ const Navigation = (props) => {
      
 
       <ul className="navigation__menu">
-        <li className="small-text">Selected Work</li>
-        <li className="small-text">About</li>
-        <li className="small-text">Contact</li>
+        <div className="wrapper"><li className="navigation__in navigation__button regular-text">Selected Work</li></div>
+        <div className="spacing-small" />
+        <div className="wrapper"><li className="navigation__in navigation__button regular-text">About</li></div>
+        <div className="spacing-small" />
+        <div className="wrapper"><li className="navigation__in navigation__button regular-text"><a href="mailto:hello@benjaminbotros.ch?subject=Contact from site">Contact</a></li></div>
+        
       </ul>
 
       <div className="navigation__info no-mobile">
-        <div className="wrapper"><div className="small-text">Scroll</div></div>
+        <div className="wrapper"><div className="navigation__in regular-text">Scroll</div></div>
       </div>
     </div>
 

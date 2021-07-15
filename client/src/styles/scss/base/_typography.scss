@@ -7,6 +7,15 @@
 }
 
 @font-face {
+  font-family: 'euclid_flexsemibold';
+  src:  url('../../assets/fonts/euclid-flex-semibold-webfont.woff') format('woff'),
+        url('../../assets/fonts/euclid-flex-semibold-webfont.woff2') format('woff2');  
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'euclid_flexregular';
   src: url('../../assets/fonts/EuclidFlex-Regular_webfont.woff2') format('woff2'),
        url('../../assets/fonts/euclidflex-regular-webfont.woff') format('woff');
@@ -40,9 +49,9 @@
   font-family: 'euclid_flexregular';
   text-transform: uppercase;
   font-size: 5.96rem;
-  line-height: 1;
+  line-height: 1.1;
 
-  &--lowercase{text-transform: none;}
+  &--uppercase{text-transform: uppercase;}
   &--bold{
     font-family: 'euclid_flexbold';
     @include respond(sm) {
@@ -75,9 +84,28 @@
   @include respond(sm) {font-size: 1.25rem;} 
 }
 
+
+.hero-heading{
+  font-family: 'euclid_flexregular';
+  font-size:3.815rem;
+
+  display: inline-block;
+
+  & a{
+    &:hover{text-decoration: underline;}
+    &::before{
+      content: "↳ ";
+      text-decoration: none;
+    }
+  }
+
+  @include respond(sm) {font-size: 1.25rem;} 
+}
+
 .regular-text{
   font-family: 'euclid_flexregular';
-  font-size: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
   &--bold{font-family: 'euclid_flexbold';}
 
   @include respond(sm) {
@@ -88,7 +116,7 @@
 
 .small-text{
   font-family: 'euclid_flexregular';
-  font-size: 1rem;
+  font-size: .64rem;
   display: inline;
   &--bold{font-family: 'euclid_flexbold';}
 

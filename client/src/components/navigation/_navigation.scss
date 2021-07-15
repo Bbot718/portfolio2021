@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 7.5vh 0;
+  padding: calc(#{$gutter-vertical} * 4) 0;
   text-align: right;
 
   @include respond(sm) {
@@ -20,15 +20,56 @@
   }
 
   &__header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: calc(#{$gutter-vertical});
+    @include respond(sm) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: calc(#{$gutter-vertical});
+    }
   }
 
   &__menu{
     display: flex; 
     flex-direction: column;
+  }
+
+  &__title{
+    display: block;
+  }
+
+
+    &__button{
+      cursor: pointer;
+      display: inline;
+
+  
+      @include respond(sm) {transform: translateY(100%);}
+  
+      position: relative;
+  
+  
+      &:before{
+         position: absolute;
+         content: "";
+         background: black;
+  
+         transition: all 0.3s;
+         height: .085rem;
+         width: 0;
+         right: 0;
+         bottom: 0;   
+      }
+  
+      &:hover:not(.pass--active){
+         &:before {
+            width: 100%;
+            bottom: 0;
+            right: 0;
+  
+            background: black;
+         }
+      }
+    
   }
   
 }

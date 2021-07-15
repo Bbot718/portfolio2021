@@ -1,3 +1,4 @@
+import React, {Suspense} from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import curDot from 'cursor-dot'
 import './styles/css/main.css';
@@ -12,8 +13,10 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
-        <Route exact={true} path="/" component={Home} />
-        <Route path={"/about"} component={About} />
+        <Suspense>
+          <Route exact={true} path="/" component={Home} />
+          <Route path={"/about"} component={About} />
+        </Suspense>
       </Router>
     </div>
   );

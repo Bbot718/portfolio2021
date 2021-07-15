@@ -4,7 +4,7 @@ const Footer = (props) => {
 
   return(
     <div className="footer">
-      <p className="small-text">Designed with <span className="red"> ♥ </span> | © 2021</p>
+      <p className="regular-text">Designed with <span className="red"> ♥ </span> | © 2021</p>
     </div>
   )
 }

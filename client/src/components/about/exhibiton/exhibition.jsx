@@ -26,7 +26,6 @@ const Exhibition = (props) => {
             <div className="exhibition__name small-text">Exhibitions</div>
           </div>
         </div>
-        <hr className="line-hair" />
         {exhibitions.map((exhibition, i) => {
           return(
             <React.Fragment>
