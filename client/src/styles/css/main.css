@@ -202,6 +202,12 @@ a {
   text-decoration: none;
 }
 
+.quartary-heading--link {
+  cursor: pointer;
+  display: inline;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
   .quartary-heading {
     font-size: 1.25rem;
@@ -231,6 +237,7 @@ a {
 
 .regular-text {
   font-family: 'euclid_flexregular';
+  font-feature-settings: 'Slashed Zero';
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -249,7 +256,6 @@ a {
 .small-text {
   font-family: 'euclid_flexregular';
   font-size: .64rem;
-  display: inline;
 }
 
 .small-text--bold {
@@ -2102,7 +2108,7 @@ a {
 }
 
 .spacing-small {
-  height: calc(1.25rem / 8);
+  height: calc(1.25rem / 4);
   display: block;
 }
 
@@ -2594,20 +2600,56 @@ a {
 }
 
 .about {
-  margin-topw: 7.5vh 0;
+  margin-top: 7.5vh 0;
 }
 
 .hero {
   width: 100%;
-  height: 100vh;
   padding: calc(1.25rem * 4) 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: auto;
+}
+
+@media only screen and (min-width: 2000px) {
+  .hero {
+    height: 100vh;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .hero {
+    height: 100vh;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .hero {
+    height: auto;
+    justify-content: left;
+  }
 }
 
 .hero__image {
   width: calc(100% - 1.25rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__image {
+    width: 100%;
+  }
+}
+
+.hero__hidder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10000;
+  transform: scaleY(0);
+  transform-origin: top;
 }
 
 .hero__media {
@@ -2624,45 +2666,17 @@ a {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .skills {
-    font-size: 10rem !important;
-  }
-}
-
-.skills__row {
-  display: flex;
-  flex-direction: row;
-}
-
-@media only screen and (max-width: 768px) {
-  .skills__row {
-    flex-direction: column;
-  }
-}
-
-.skills__list {
-  margin-right: 3rem;
-}
-
-.skills__item {
+.skills__title {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-  .skills__item {
-    font-size: 1.25rem !important;
-  }
+.skills__item {
+  display: inline-block;
 }
 
-.skills__subitem:before {
-  content: "› ";
-}
-
-@media only screen and (max-width: 768px) {
-  .skills__subitem {
-    font-size: 1.25rem !important;
-  }
+.skills__item:not(:last-child):after {
+  content: ", ";
+  white-space: pre;
 }
 
 .exhibition__row {

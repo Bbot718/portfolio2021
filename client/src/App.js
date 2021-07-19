@@ -7,6 +7,7 @@ import Navigation from './components/navigation/navigation';
 
 import Home from './components/home/home';
 import About from './components/about/about';
+import Project from './components/project/project';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Suspense>
           <Route exact={true} path="/" component={Home} />
           <Route path={"/about"} component={About} />
+          <Route path={"/project/"} component={Project} />
         </Suspense>
       </Router>
     </div>

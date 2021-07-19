@@ -1,27 +1,15 @@
 .skills{
-  @include respond(sm) {font-size: 10rem !important} 
-  &__row{
-    display: flex;
-    flex-direction: row;
-    
-
-    @include respond(sm) {flex-direction: column ;} 
+  &__title{
+    //border-bottom: 1px solid black;
+    text-decoration: underline;
   }
-  
-  &__list{
-    margin-right: 3rem;
-  }
-
-
 
   &__item{
-    text-decoration: underline  ;
-    @include respond(sm) {font-size: 1.25rem !important} 
-  }
+    display: inline-block;
 
-  &__subitem{
-    &:before{content: "› ";}
-    @include respond(sm) {font-size: 1.25rem !important} 
+    &:not(:last-child):after{
+      content: ", ";
+      white-space: pre;
+    }
   }
-
 }

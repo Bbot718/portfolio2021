@@ -1,4 +1,4 @@
-import gsap, {Circ, Power3} from 'gsap';
+import gsap, {Expo} from 'gsap';
 import SplitText from 'gsap/dist/SplitText';
 
 const HomeOut = () => {
@@ -8,15 +8,21 @@ const HomeOut = () => {
   
   const tl = gsap.timeline({});
 
-  tl.to('.header', {opacity: 0}, 0)
+  tl.to('.header__heading', {y: '100%'}, 0);
+  tl.to('.header__line', {scaleX: 0, onStart:() =>{
+    gsap.set('.header__line', {transformOrigin: 'right'})
+  }}, 0);
+
   tl.to('.contact', {opacity: 0}, 0)
+  tl.to('.home__link', {opacity: 0}, 0)
+ 
 
-
-  tl.to('.work-item__image--hidder', {scaleY: 1, duration: 1, ease: Circ.easeOut, onStart:()=>{
+  tl.to('.work-item__image--hidder', {scaleY: 1, duration:1,  ease: Expo.easeInOut,  onStart:()=>{
     gsap.set('.work-item__image--hidder', {transformOrigin: 'top'})
   }}, 0)
-  tl.to(tl.to(titleST.chars, {y: '100%', stagger: 0.1}, 0), {y: '100%', ease: Circ.easeOut}, 0)
-  tl.to(titleST.chars, {y: '100%', stagger: 0.1}, 0)
+  tl.to(tl.to('.work__title', {y: '100%',  ease: Expo.easeIn, stagger: 0.1}, 0), {y: '100%'}, 0.5)
+  tl.to('titleST.chars', {y: '100%', stagger: 0.1}, 0)
+  tl.to( '.work-item__tag', {y: '100%', }, 0)
   tl.to([nameST.words, '.work-item__date'] , {y: '100%', }, 0)
   tl.to('.work__line', {scaleX: 0, onStart:() => {
     gsap.set('.work__line', {transformOrigin: 'right'});

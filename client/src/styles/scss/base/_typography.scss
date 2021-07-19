@@ -81,6 +81,12 @@
     }
   }
 
+  &--link{
+    cursor: pointer;
+    display: inline;
+    text-decoration: underline;
+  }
+
   @include respond(sm) {font-size: 1.25rem;} 
 }
 
@@ -104,6 +110,7 @@
 
 .regular-text{
   font-family: 'euclid_flexregular';
+  font-feature-settings: 'Slashed Zero';
   font-size: 1rem;
   line-height: 1.5;
   &--bold{font-family: 'euclid_flexbold';}
@@ -117,7 +124,7 @@
 .small-text{
   font-family: 'euclid_flexregular';
   font-size: .64rem;
-  display: inline;
+
   &--bold{font-family: 'euclid_flexbold';}
 
   @include respond(sm) {

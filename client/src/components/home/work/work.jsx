@@ -29,7 +29,7 @@ const Work = (props) => {
   }, [])
 
   return(
-    <section className="work">
+    <section id='work' className="work">
       <div ref={title} className="wrapper"><div className="work__title primary-heading">work</div></div>
       <hr ref={line} className="work__line line-xl" />
       {projects.map((project, i) => {

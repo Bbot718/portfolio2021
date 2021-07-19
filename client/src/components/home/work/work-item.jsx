@@ -23,17 +23,17 @@ const WorkItem = (props) => {
 
  
 
-  const handleClick = () => {
+  const handleClick = (id) => {
     const homeOut = HomeOut();
     setTimeout(() => {
-      history.push("/about/");
+      history.push("/project/" + id);
       window.scrollTo(0,0);
     }, homeOut);
   }
 
   return(
     <React.Fragment>
-      <article  onClick={() => {handleClick()}} 
+      <article  onClick={() => {handleClick(props.data.projects_id)}} 
                 onMouseOver={() => {WorkItemHover(true, name.current, media.current)}}
                 onMouseOut={() => {WorkItemHover(false, name.current, media.current)}}
                 className="work-item">
