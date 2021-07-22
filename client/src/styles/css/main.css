@@ -2702,4 +2702,8 @@ a {
     text-align: left;
   }
 }
+
+.project {
+  padding-top: calc(5rem);
+}
 /*# sourceMappingURL=main.css.map */

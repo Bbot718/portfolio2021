@@ -26,7 +26,11 @@ const WorkItem = (props) => {
   const handleClick = (id) => {
     const homeOut = HomeOut();
     setTimeout(() => {
-      history.push("/project/" + id);
+      history.push({
+        pathname: '/project',
+        search: '?id=' + id,
+        state: {id: id}        
+      });
       window.scrollTo(0,0);
     }, homeOut);
   }

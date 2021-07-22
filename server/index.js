@@ -43,7 +43,7 @@ app.get('/api/tags', (req, res) => {
 })
 
 app.get('/api/exhibitions', (req, res) => {
-  const sqlSelect = "SELECT * from exhibitions ORDER BY end_date DESC";
+  const sqlSelect = "SELECT * from exhibitions INNER JOIN projects_exhibitions WHERE exhibitions.exhibitions_id = projects_exhibitions.exhibitions_id ORDER BY end_date DESC";
   db.query(sqlSelect, (err, result) => {
      res.send(result);
   })
@@ -55,6 +55,8 @@ app.get('/api/locations', (req, res) => {
      res.send(result);
   })
 })
+
+
 
 
 app.listen(3001, () => {
